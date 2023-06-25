@@ -1,0 +1,133 @@
+/* Set background color of the page to #323232 */
+body {
+    background-color: #323232;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+#content {
+    margin: 75px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Set white border-color and thicker table borders */
+table {
+    border-collapse: collapse;
+    /* Fix typo: should be 'collapse', not 'coll' */
+}
+
+td {
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+table td {
+    border: 5px solid white;
+}
+
+table tr:first-child td {
+    border-top: 0;
+}
+
+table tr td:first-child {
+    border-left: 0;
+}
+
+table tr:last-child td {
+    border-bottom: 0;
+}
+
+table tr td:last-child {
+    border-right: 0;
+}
+
+.currcentplay {
+    margin-top: 50px;
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.width-100{
+    width: 100%;
+}
+
+.display-column-aligncenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.d-flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+    background-color: #00B0EF;
+    border: 2px solid #FFF;
+    color: #FFF;
+    padding: 10px 20px;
+    width: 200px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #17bffc;
+}
+
+
+.symbol-active {
+    animation: pulsate 1.2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes pulsate {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.9;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+.d-none {
+    display: none;
+}
+.winningscreen {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    height: 160px;
+    
+}
+  
+.winningscreen img {
+    height: 70px;
+}
+
+.d-flex {
+    display: flex;
+}

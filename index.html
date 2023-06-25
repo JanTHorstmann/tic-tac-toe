@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Tic Tac Toe</title>
+    <title>Tic Tac Oh</title>
 </head>
-<body>
-    
+<body onload="init()">
 
+    <h1>Tic Tac Toe</h1>
+    <div class="width-100 display-column-aligncenter">
+        <div class="currcentplay">
+            <div id="circle"></div>
+            <div id="cross"></div>
+        </div>
 
+        <div id="content"></div>
+
+        <button onclick="restartGame()">Neustart</button>
+    </div>
+    <div id="endscreen" class="winningscreen d-flex-center">
+        
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
